@@ -2,14 +2,16 @@
 <head>
     <title>Google</title>
     <link href="styles/normalize.css" rel="stylesheet">
-
+    <link href="styles/main.css" rel="stylesheet"> 
 </head>
 <body>
     <header>
         <nav>
-            <ul>
+            <ul id="nav-list">
                 <li>Gmail</li>
                 <li>Imágenes</li>
+                <li>Menú</li>
+                <li><img src="images/profile.jpg" id="profile" alt="profile photo"></li>
             </ul>
         </nav>
     </header>
@@ -17,23 +19,33 @@
     <main>
         <img src="./images/google-logo.png" alt="Google logo">
         <input type="text">
-        <button>Buscar con Google</button>
-        <button>Me siento con suerte</button>
-        <p>Ofrecido por Google en: <a href="">English</a> <a href="">Español</a></p>
+        <div id="buttons">
+            <button>Buscar con Google</button>
+            <button>Me siento con suerte</button>
+        </div>
+
+        <p id="offered">Ofrecido por Google en: <a href="">English</a> <a href="">Español</a></p>
     </main>
 
     <footer>
-        <p>Colombia</p>
-        <ul>
-            <li>Sobre Google</li>
-            <li>Publicidad</li>
-            <li>Negocios</li>
-            <li>Cómo funciona la Búsqueda</li>
-        </ul>
-        <ul>
-            <li>Privacidad</li>
-            <li>Condiciones</li>
-            <li>Preferencias</li>
-        </ul>
+        <div id="footer-top">
+            <p>Colombia</p>
+        </div>
+        <div id="footer-left">
+            <ul>
+                <li>Sobre Google</li>
+                <li>Publicidad</li>
+                <li>Negocios</li>
+                <li>Cómo funciona la Búsqueda</li>
+            </ul>
+        </div>
+        <div id="footer-right">
+            <ul>
+                <li>Privacidad</li>
+                <li>Condiciones</li>
+                <li>Preferencias</li>
+            </ul>
+        </div>
+
     </footer>
 </body>
